@@ -197,3 +197,24 @@ p.keterangan{
 .cta:hover{
     background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
 }
+
+@media screen and (max-width: 767px){
+    .container-isi{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .default-kolom{
+        width: 100%;
+    }
+    .circle{
+        width: 100px;
+        height: 100px;
+    }
+    .kolom-summary{
+        padding: 0 30px 30px 19px;
+    }
+    .kolom-result{
+        border-radius: 0 0 25px 25px;
+    }
+}
