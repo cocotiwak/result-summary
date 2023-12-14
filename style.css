@@ -59,6 +59,7 @@ p{
     background-image: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
     width: 50%;
     border-radius: 25px;
+    justify-content: flex-start;
 }
 .kolom-summary{
 
@@ -72,7 +73,7 @@ p{
 
 .kolom-result .title{
     color: hsl(249.17,97.3%,85.49%);
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1.5em;
     font-weight: bold;
     font-size: 1.5em;
@@ -80,7 +81,7 @@ p{
 
 .kolom-summary .title{
     color: black;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1.5em;
     font-weight: bold;
     font-size: 1.5em;
@@ -127,7 +128,7 @@ p.keterangan{
     gap: 2em;
 }
 
-.reaction, .memory, .verbal, .visual{
+.reaction .inner, .memory .inner, .verbal .inner, .visual .inner{
     font-weight: bold;
     display: flex;
     flex-direction: row;
