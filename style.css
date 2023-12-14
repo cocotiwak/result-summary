@@ -50,7 +50,7 @@ p{
 
 .default-kolom{
     display: flex;
-    justify-content: center;
+   justify-content: center; 
     align-items: center;
     flex-direction: column;
 }
@@ -61,7 +61,13 @@ p{
     border-radius: 25px;
 }
 .kolom-summary{
-    background-color: var(--White);
+
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 30px 30px;
+    box-shadow: 15px 15px 30px hsl(222,71.43%,94.51%);
+    border-radius: 25px;
 }
 
 .kolom-result .title{
@@ -74,6 +80,11 @@ p{
 
 .kolom-summary .title{
     color: black;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
 }
 .circle{
     width: 150px;
@@ -107,4 +118,82 @@ p.keterangan{
     color: hsl(249.17,97.3%,85.49%);
     margin-top: 1.5em;
     padding-bottom: 2em;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2em;
+}
+
+.reaction, .memory, .verbal, .visual{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.reaction p, .memory p, .verbal p, .visual p{
+    font-size: 20px;
+}
+
+.stats .reaction{
+    background-color: hsla(0, 100%, 67%, 0.2);
+    padding: 15px;
+    border-radius: 0.5em;
+}
+
+.stats .memory{
+    background-color: hsla(39, 100%, 56%, 0.2);
+    padding: 15px;
+    border-radius: 0.5em;
+}
+
+.stats .verbal{
+    background-color: hsla(166, 100%, 37%, 0.2);
+    padding: 15px;
+    border-radius: 0.5em;
+}
+
+.stats .visual{
+    background-color: hsla(234, 85%, 45%, 0.2);
+    padding: 15px;
+    border-radius: 0.5em;
+}
+
+.stats .reaction .item{
+    color: var(--Light-red);
+}
+
+.stats .memory .item{
+    color: var(--Orangey-yellow);
+}
+
+.stats .verbal .item{
+    color: var(--Green-teal);
+}
+
+.stats .visual .item{
+    color: var(--Cobalt-blue);
+}
+
+.score-max{
+    color: hsl(300,4.4%,68.82%);
+}
+
+.cta{
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    width: 90%;
+    border-radius: 50px;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+}
+
+.cta:hover{
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
 }
